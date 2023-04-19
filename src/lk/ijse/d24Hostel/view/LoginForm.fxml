@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24Hostel.controller.LoginFormController">
+    <children>
+      <VBox prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #c8d8e4;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="300.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@assest/images/Hostel_hub.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #2b6777;">
+               <children>
+                  <HBox prefHeight="89.0" prefWidth="900.0" spacing="35.0">
+                     <children>
+                          <Label prefHeight="34.0" prefWidth="106.0" text="Username" textFill="#c8d8e4">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                          <TextField fx:id="usernameField" prefHeight="38.0" prefWidth="229.0" style="-fx-background-color: #c8d8e4;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <padding>
+                        <Insets left="250.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0" prefHeight="60.0" prefWidth="900.0" spacing="35.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="106.0" text="Password" textFill="#c8d8e4">
+                           <font>
+                              <Font name="Times New Roman Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" prefHeight="38.0" prefWidth="229.0" style="-fx-background-color: #c8d8e4;">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                     <padding>
+                        <Insets left="250.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="180.0" prefHeight="6.0" prefWidth="900.0" spacing="35.0">
+                     <padding>
+                        <Insets left="500.0" />
+                     </padding>
+                     <children>
+                        <CheckBox fx:id="showPasswordCheckbox" mnemonicParsing="false" text="Show password" textFill="#c8d8e4">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="78.0" prefWidth="900.0">
+                     <children>
+                          <Button fx:id="loginButton" mnemonicParsing="false" prefHeight="72.0" prefWidth="154.0" style="-fx-background-color: #c8d8e4;" text="Login">
+                           <HBox.margin>
+                              <Insets left="400.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold Italic" size="31.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="45.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="100.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+    </children>
+
+</AnchorPane>

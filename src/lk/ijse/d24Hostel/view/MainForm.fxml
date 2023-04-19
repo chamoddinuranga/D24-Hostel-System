@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24Hostel.controller.MainFormController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #2b6777;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="900.0" style="-fx-background-color: #c8d8e4;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@assest/images/logout.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="100.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assest/images/Hostel_hub.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="200.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="282.0" prefWidth="900.0" spacing="75.0">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="75.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@assest/images/key.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assest/images/room.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="260.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assest/images/managePayments.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets top="75.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="61.0" prefWidth="900.0">
+               <children>
+                  <Label fx:id="lblMenu" prefHeight="44.0" prefWidth="300.0" textFill="#d2e80d">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="300.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="412.0" prefHeight="61.0" prefWidth="900.0">
+               <children>
+                  <Label fx:id="lblDescription" prefHeight="44.0" prefWidth="600.0" textFill="#c8d8e4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="150.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+   </children>
+</AnchorPane>

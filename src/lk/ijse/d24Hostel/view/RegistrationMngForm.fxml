@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.d24Hostel.controller.RegistrationMngFormController">
+   <children>
+      <VBox prefHeight="900.0" prefWidth="900.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="60.0" style="-fx-background-color: #2b6777;">
+               <children>
+                  <ImageView fitHeight="73.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assest/images/home.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="20.0" top="12.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="50.0" prefWidth="330.0" text="Manage Registration " textFill="#c8d8e4">
+                     <font>
+                        <Font name="System Italic" size="34.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="100.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assest/images/addNewStudent.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox prefHeight="800.0" prefWidth="100.0" style="-fx-background-color: #C8D8E4;">
+               <children>
+                  <HBox prefHeight="58.0" prefWidth="900.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="124.0" text="Student Id">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="687.0" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="58.0" prefWidth="900.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="124.0" text="Name">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="687.0" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="68.0" prefHeight="58.0" prefWidth="900.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="124.0" text="Address">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="687.0" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="126.0" prefHeight="58.0" prefWidth="900.0" spacing="37.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="127.0" text="Contact No.">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="687.0" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="184.0" prefHeight="58.0" prefWidth="900.0" spacing="40.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="124.0" text="Birthday">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <TextField prefHeight="31.0" prefWidth="687.0" />
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="242.0" prefHeight="58.0" prefWidth="564.0" spacing="60.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="124.0" text="Gender">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <CheckBox mnemonicParsing="false" text="Male">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox layoutX="174.0" layoutY="30.0" mnemonicParsing="false" text="Female">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </CheckBox>
+                        <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #0025BC;" text="Save" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button layoutX="477.0" layoutY="30.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #C60301;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="90.0" prefWidth="900.0">
+                     <children>
+                        <TableView prefHeight="346.0" prefWidth="675.0">
+                          <columns>
+                            <TableColumn prefWidth="93.0" text="Student Id" />
+                            <TableColumn prefWidth="123.0" text="Name" />
+                              <TableColumn minWidth="9.0" prefWidth="115.0" text="Address" />
+                              <TableColumn minWidth="9.0" prefWidth="115.0" text="Contact No." />
+                              <TableColumn minWidth="9.0" prefWidth="115.0" text="Birthday" />
+                              <TableColumn minWidth="9.0" prefWidth="115.0" text="Gender" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <padding>
+                        <Insets left="110.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <VBox prefHeight="317.0" prefWidth="900.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="53.0" prefWidth="900.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="403.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="154.0" text="Reservation Id">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField prefHeight="31.0" prefWidth="150.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="49.0" prefWidth="900.0">
+                           <children>
+                              <HBox prefHeight="54.0" prefWidth="408.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="154.0" text="Room Type Id">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField prefHeight="31.0" prefWidth="239.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="63.0" prefHeight="49.0" prefWidth="900.0">
+                           <children>
+                              <HBox prefHeight="49.0" prefWidth="408.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="154.0" text="Room Type">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField prefHeight="31.0" prefWidth="234.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="49.0" prefWidth="408.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="117.0" text="Start Date">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefHeight="31.0" prefWidth="234.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="112.0" prefHeight="49.0" prefWidth="900.0">
+                           <children>
+                              <HBox prefHeight="49.0" prefWidth="408.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="154.0" text="Rm Availability">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <TextField prefHeight="31.0" prefWidth="234.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="408.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="117.0" text="End date">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <TextField prefHeight="31.0" prefWidth="234.0" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="161.0" prefHeight="49.0" prefWidth="900.0" spacing="120.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="186.0" style="-fx-background-color: #2b6777;" text="Place Room" textFill="WHITE">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="27.0" />
+                                 </font>
+                              </Button>
+                              <HBox prefHeight="49.0" prefWidth="478.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="30.0" prefWidth="123.0" text="Key Money">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label layoutX="60.0" layoutY="10.0" prefHeight="30.0" prefWidth="139.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label layoutX="203.0" layoutY="10.0" prefHeight="30.0" prefWidth="93.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="100.0" />
+                           </padding>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="210.0" prefHeight="49.0" prefWidth="900.0" spacing="60.0">
+                           <children>
+                              <HBox prefHeight="49.0" prefWidth="408.0" spacing="20.0">
+                                 <children>
+                                    <Label prefHeight="46.0" prefWidth="130.0" text="Total RS.">
+                                       <font>
+                                          <Font name="System Italic" size="25.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets left="50.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label layoutX="60.0" layoutY="10.0" prefHeight="46.0" prefWidth="168.0">
+                                       <font>
+                                          <Font name="System Italic" size="25.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="140.0" style="-fx-background-color: #E6E62E;" text="Pay">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="27.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="280.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
